@@ -12,8 +12,8 @@
     <meta property="og:title" content="Олександр Федотов - Frontend Developer Portfolio">
     <meta property="og:description" content="Портфоліо Frontend розробника Олександра Федотова, студента, який активно розвиває навички у React.js та створює інтерактивні веб-інтерфейси.">
     <meta property="og:type" content="profile">
-    <meta property="og:url" content="[ВСТАВТЕ ВАШ URL ПОРТФОЛІО ТУТ, НАПРИКЛАД: https://yourusername.github.io/yourportfolio/]">
-    <meta property="og:image" content="[ВСТАВТЕ URL ЗОБРАЖЕННЯ ВАШОГО АВАТАРА ТУТ, НАПРИКЛАД: https://yourusername.github.io/yourportfolio/avatar.jpg]">
+    <meta property="og:url" content="https://codenoob53.github.io/MyCV/">
+    <meta property="og:image" content="assets\img\mini.avif" id="og-image"> <!-- Припускається, що зображення буде за цим URL -->
     <meta property="profile:first_name" content="Олександр">
     <meta property="profile:last_name" content="Федотов">
 
@@ -22,7 +22,7 @@
     <meta name="twitter:site" content="@your_twitter_handle"> <!-- Замініть на ваш Twitter handle, якщо є -->
     <meta name="twitter:title" content="Олександр Федотов - Frontend Developer Portfolio">
     <meta name="twitter:description" content="Портфоліо Frontend розробника Олександра Федотова, студента, який активно розвиває навички у React.js та створює інтерактивні веб-інтерфейси.">
-    <meta name="twitter:image" content="[ВСТАВТЕ URL ЗОБРАЖЕННЯ ВАШОГО АВАТАРА ТУТ, НАПРИКЛАД: https://yourusername.github.io/yourportfolio/avatar.jpg]">
+    <meta name="twitter:image" content="https://codenoob53.github.io/MyCV/avatar.jpg"> <!-- Припускається, що зображення буде за цим URL -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -876,7 +876,10 @@
             }
 
             .header-content {
-                grid-template-columns: 1fr;
+                /* Змінено на flexbox для кращого центрування */
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Центрує елементи по горизонталі */
                 text-align: center;
                 gap: 20px;
             }
@@ -1010,8 +1013,8 @@
       "@type": "Person",
       "name": "Федотов Олександр",
       "jobTitle": "Frontend Developer",
-      "url": "[ВСТАВТЕ ВАШ URL ПОРТФОЛІО ТУТ, НАПРИКЛАД: https://yourusername.github.io/yourportfolio/]",
-      "image": "[ВСТАВТЕ URL ЗОБРАЖЕННЯ ВАШОГО АВАТАРА ТУТ, НАПРИКЛАД: https://yourusername.github.io/yourportfolio/avatar.jpg]",
+      "url": "https://codenoob53.github.io/MyCV/",
+      "image": "https://codenoob53.github.io/MyCV/avatar.jpg",
       "sameAs": [
         "https://github.com/CodeNoob53",
         "https://linkedin.com/in/alexandr-fedotov-93a201285/",
@@ -1048,7 +1051,7 @@
         <header class="header fade-in">
             <div class="header-content">
                 <div class="avatar">
-                    <img src="assets/img/avatar.jpg" alt="Олександр Федотов Аватар">
+                    <img src="assets/img/avatar.jpg" alt="Аватар Олександра Федотова" onerror="this.onerror=null; this.src='https://placehold.co/120x120/6366f1/ffffff?text=AVATAR';">
                 </div>
                 <div class="intro">
                     <h1 class="name">Федотов Олександр</h1>
